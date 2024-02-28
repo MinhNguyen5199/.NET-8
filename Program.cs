@@ -58,7 +58,4 @@ app.UseCors("myCorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
-
-// Dynamically set the port for Heroku deployment
-var port = Environment.GetEnvironmentVariable("PORT") ?? "26133";
-app.Run($"http://0.0.0.0:{port}");
+app.Run($"http://0.0.0.0:26133");
