@@ -21,7 +21,7 @@ builder.Services.AddCors(o =>
 {
     o.AddPolicy("myCorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+        policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
     });
 });
 builder.Services.AddScoped<EmailService>();
