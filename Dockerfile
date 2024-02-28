@@ -1,30 +1,19 @@
-# Use the .NET 8 SDK image as the base image for building
+# Use a base image that supports .NET 8.0
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the project file and restore dependencies
+# Copy csproj files and restore dependencies
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy the remaining source code
+# Copy the rest of the application and build
 COPY . ./
-
-# Build the application
 RUN dotnet publish -c Release -o out
 
-# Use the .NET 8 runtime image as the base image for running the application
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
-
-# Set the working directory in the container
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
-
-# Copy the published application to the container
-COPY --from=build /app/out ./
-
-# Expose port 80 for HTTP traffic
-EXPOSE 80
-
-# Define the command to run the application
-CMD ["dotnet", "API.dll"]
+COPY --from=build /app/out .
+ENTRYPOINT ["dotnet", "API.dll"]

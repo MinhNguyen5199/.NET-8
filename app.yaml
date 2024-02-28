@@ -1,0 +1,17 @@
+runtime: aspnetcore
+env: flex
+
+runtime_config:
+  runtime_version: "8"
+  operating_system: "ubuntu22"
+
+manual_scaling:
+  instances: 1
+
+beta_settings:
+  cloud_sql_instances: static-battery-410704:us-central1:myinstance=tcp:1433
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
