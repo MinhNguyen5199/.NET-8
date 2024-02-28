@@ -59,4 +59,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+// Dynamically set the port for Heroku deployment
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+app.Run($"http://0.0.0.0:{port}");
