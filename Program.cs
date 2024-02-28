@@ -21,7 +21,7 @@ builder.Services.AddCors(o =>
 {
     o.AddPolicy("myCorsPolicy", policy =>
     {
-        policy.WithOrigins("https://angular-app-sepia-three.vercel.app").AllowAnyHeader().AllowAnyMethod();
+        policy.WithOrigins("https://angular-app-orcin.vercel.app").AllowAnyHeader().AllowAnyMethod();
     });
 });
 builder.Services.AddScoped<EmailService>();

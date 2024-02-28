@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SF8hg6s1+eIrjN1vQ9XuPMAhI3VrKvSr3CVaNZS2VXGDmEBtBhnOJnf04iaE+FsDnW+vEOlvNGBrz5WyX5pE9A==",
+  "dgSpecHash": "VtwNFMvpEpdALyw6K2YH9TzsYS/UTdqEvMVH0kp3dDl+6Z+NxU81NBiiTSrtxRXu8LSchDM7dPXBLeTDqTjLrw==",
   "success": true,
-  "projectFilePath": "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/API.csproj",
+  "projectFilePath": "/Users/minhnguyentranhoang/Projects/.NET-8/API.csproj",
   "expectedPackageFiles": [
     "/Users/minhnguyentranhoang/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/minhnguyentranhoang/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

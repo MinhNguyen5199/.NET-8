@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/API.csproj": {}
+    "/Users/minhnguyentranhoang/Projects/.NET-8/API.csproj": {}
   },
   "projects": {
-    "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/API.csproj": {
+    "/Users/minhnguyentranhoang/Projects/.NET-8/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/API.csproj",
+        "projectUniqueName": "/Users/minhnguyentranhoang/Projects/.NET-8/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/API.csproj",
+        "projectPath": "/Users/minhnguyentranhoang/Projects/.NET-8/API.csproj",
         "packagesPath": "/Users/minhnguyentranhoang/.nuget/packages/",
-        "outputPath": "/Users/minhnguyentranhoang/Desktop/leetcode/spiderman2/2312LibraryMS-main/API/API/obj/",
+        "outputPath": "/Users/minhnguyentranhoang/Projects/.NET-8/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/minhnguyentranhoang/.nuget/NuGet/NuGet.Config"
