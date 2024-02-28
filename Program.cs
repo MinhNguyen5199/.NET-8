@@ -13,9 +13,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// Retrieve the port assigned by Heroku
+var port = Environment.GetEnvironmentVariable("PORT");
 builder.Services.AddDbContext<Context>(o =>
 {
-    o.UseSqlServer(builder.Configuration.GetConnectionString("DB"));
+    o.UseSqlServer(builder.Configuration.GetConnectionString($"Server=static-battery-410704:us-central1:myinstance=tcp:34.123.230.234,{port};Database=LMS;User Id=sqlserver;Password=Hoangminh@123;TrustServerCertificate=True;Encrypt=True;"));
 });
 builder.Services.AddCors(o =>
 {
@@ -58,4 +60,5 @@ app.UseCors("myCorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
-app.Run($"http://0.0.0.0:26133");
+
+app.Run($"http://0.0.0.0:{port}");
