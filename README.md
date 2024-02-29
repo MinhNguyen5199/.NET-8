@@ -57,5 +57,4 @@ In the file Program.cs: you set policy.WithOrigins to where you host front-end
 
 ## Website look
 
-<img src="https://s2.ezgif.com/tmp/ezgif-2-c4b37de34f.gif"/>
-
+![ScreenRecording2024-02-29at12 25 50AM-ezgif com-video-to-gif-converter](https://github.com/MinhNguyen5199/AngularApp/assets/86221335/d7a4edfb-8bd3-4f3e-8d91-8a13210595a4)
