@@ -3,10 +3,6 @@
 This is the back-end repository of this front-end repository: [https://github.com/MinhNguyen5199/.NET-8 ](https://github.com/MinhNguyen5199/AngularApp)
 
 ## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
 - [Website look](#Website-look)
 
 ## The purpose of this project is to learn and practice concepts related to:
