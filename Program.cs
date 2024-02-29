@@ -21,7 +21,7 @@ builder.Services.AddCors(o =>
 {
     o.AddPolicy("myCorsPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+        policy.WithOrigins("https://angular-app-orcin.vercel.app").AllowAnyHeader().AllowAnyMethod();
     });
 });
 builder.Services.AddScoped<EmailService>();
@@ -55,6 +55,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("myCorsPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
